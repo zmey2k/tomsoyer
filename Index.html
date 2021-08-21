@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Multi Line Chart</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <input type="radio" name="country" value="us" onclick="addUs()">US
+    <input type="radio" name="country" value="uk" onclick="addUk()">UK
+    <input type="radio" name="country" value="ar" onclick="addAr()">AR
+    <input type="radio" name="country" value="de" onclick="addDe()">DE
+    <input type="radio" name="country" value="br" onclick="addBr()">BR
+
+    <br>
+    <input type="radio" name="platform" value="all" onclick="addAllPlatforms()">ALL
+    <input type="radio" name="platform" value="ios" onclick="addiOS()">iOS
+    <input type="radio" name="platform" value="android" onclick="addAndroid()">Android
+    <br>
+    <input type="radio" name="network" value="facebook" onclick="addFacebook()">Facebook
+    <input type="radio" name="network" value="unity" onclick="addUnity()">Unity
+    <input type="radio" name="network" value="ironsource" onclick="addIronSource()">IronSource
+    <input type="radio" name="network" value="chartboost" onclick="addChartboost()">Chartboost
+    <input type="radio" name="network" value="applovin" onclick="addAppLovin()">Amazon
+    <br>
+    <button onclick="Execute();">Execute</button>
+    <br>
+    <br>
+    <div id="chart" class="svg-container"></div>
+    <script src="chart.js"></script>
+
+</body>
+</html>
